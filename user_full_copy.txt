@@ -1,0 +1,63 @@
+<USER_REQUEST>
+I've applied your answers to the copy below. Section 4 is left as options for you to choose from.
+
+## Revised copy
+
+**1. Hero**
+
+**Headline:** Elite AI Engineers. Ready for Enterprise Deployment.
+
+**Sub-headline:** Ottobon trains AI engineers to be problem-solvers, not just coders. As an official Anthropic partner, we prepare developers to fit into your team and start delivering.
+
+**CTAs:** [Review Talent Profiles] | [View Our Case Studies]
+
+**2. How We Choose Our Engineers**
+
+- **Built for integration.** We look for developers who think in systems and know when to reuse proven components instead of building everything from scratch.
+- **A strong analytical baseline.** Aptitude testing confirms each candidate can handle our case-study training.
+- **Independent problem-solvers.** We select people who work autonomously and quickly understand your business and technical constraints, rather than waiting for step-by-step instructions.
+
+**3. How We Train Them**
+
+- **Phase I: Business case studies (HBS-style).** Instead of theory, engineers work through realistic business simulations. They analyse incomplete data and real-world constraints, and align the technical design with business goals before writing any code.
+- **Phase II: Official Anthropic partnership.** Our engineers are trained on Claude methods: prompt design, working with large amounts of context, and enterprise safety practices. The aim is accurate, reliable AI output with fewer hallucinations.
+- **Phase III: Fast sprints, built to scale.** Engineers deliver quick MVPs in short sprints while designing a foundation that can grow, so speed doesn't create technical debt.
+
+**4. Capabilities and Proof:** see options below.
+
+**5. Why It Matters for Your Business**
+
+- **Lower hiring risk.** Traditional hiring leans on interviews that test theory. Our engineers arrive with applied, case-based practice, which reduces the risk of a mis-hire.
+- **Built around your goals.** They learn the business objective first, so they build solutions that serve your b
+<truncated 1661 bytes>
+confidence in delivery is high.
+
+## What I changed, and what to check
+
+- **Removed** "task-rabbits," "the 1%," "high-pressure," "hundreds of hours," "3-to-6-month," "virtually eliminating" and "free of hallucinations."
+- **Simplified the language** for company owners and hiring managers, who care about risk, speed and one invoice more than about "prompt chaining."
+- **"Anthropic-certified" is gone.** You said official partners, so I used that. If your engineers also hold an actual Anthropic certification, tell me and I'll add it back, since the two claims are different.
+- **"View Our Case Studies"** stays as you asked, but with no clients it will need a destination later. Tell me when you decide.
+- **Ottobon** isn't named in the page copy yet, apart from the hero. We can add it to the section headings or the footer.
+- **The FAQ** is still missing the questions a US owner will ask: pricing, what happens if an engineer underperforms, who owns the IP, data security and conversion fees if they hire directly. I can draft those once you tell me your actual policies.
+
+Which option do you want for section 4?
+
+
+this is the messaging for the site and i want you align every section with the current existing template
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-23T13:53:32+05:30.
+
+The user's current state is as follows:
+Active Document: c:\Users\Sampath\Desktop\Landing_page\src\styles\targo.css (LANGUAGE_CSS)
+Cursor is on line: 1
+Other open documents:
+- c:\Users\Sampath\Desktop\Landing_page\src\styles\targo.css (LANGUAGE_CSS)
+No browser pages are currently open.
+Running terminal commands:
+- npm run dev (in c:\Users\Sampath\Desktop\Landing_page, running for 3h46m46s)
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from Gemini 3.8 Flash (High) to Claude Sonnet 4.6 (Thinking). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>

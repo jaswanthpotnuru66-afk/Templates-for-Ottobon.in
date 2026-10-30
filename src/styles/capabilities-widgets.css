@@ -1,0 +1,544 @@
+/* ============================================================
+   CORE CAPABILITIES - INTERACTIVE LIVE WIDGETS
+   Shared styles for Template 1 (Light) & Template 2 (Dark)
+   ============================================================ */
+
+.cap-widget {
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: var(--font-sans, "Inter", sans-serif);
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+/* --- LIGHT THEME (Template 1) --- */
+.cap-widget--light {
+  background-color: #F8FAFC;
+  border: 1px solid rgba(14, 18, 22, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.cap-widget--light .cap-widget-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748B;
+}
+
+.cap-widget--light .cap-code-block {
+  background-color: #0F172A;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 14px;
+  overflow-x: auto;
+}
+
+.cap-widget--light .cap-pre code {
+  color: #E2E8F0;
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+  font-size: 11.5px;
+  line-height: 1.55;
+}
+
+.cap-widget--light .cap-tab-btn {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #64748B;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cap-widget--light .cap-tab-btn:hover {
+  color: #0F172A;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.cap-widget--light .cap-tab-btn.active {
+  color: #0F172A;
+  background-color: #FFFFFF;
+  border-color: rgba(14, 18, 22, 0.12);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.cap-widget--light .cap-run-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #0F172A;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(14, 18, 22, 0.14);
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cap-widget--light .cap-run-btn:hover {
+  background-color: #F1F5F9;
+  border-color: #0EA5E9;
+  color: #0284C7;
+}
+
+.cap-widget--light .cap-seg-btn {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748B;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 3px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cap-widget--light .cap-seg-btn:hover {
+  color: #0F172A;
+}
+
+.cap-widget--light .cap-seg-btn.active {
+  color: #0284C7;
+  background-color: #FFFFFF;
+  border-color: rgba(2, 132, 199, 0.25);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.cap-widget--light .cap-gauge-track {
+  height: 6px;
+  background-color: #E2E8F0;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 8px 0 10px 0;
+}
+
+.cap-widget--light .cap-gauge-fill {
+  height: 100%;
+  background: #10B981;
+  border-radius: 999px;
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cap-widget--light .cap-doc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10.5px;
+  font-family: var(--font-mono, monospace);
+  color: #475569;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.cap-widget--light .cap-sprint-phase {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.cap-widget--light .cap-sprint-badge {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #0284C7;
+  background-color: rgba(14, 165, 233, 0.1);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.cap-widget--light .cap-sprint-detail {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #475569;
+  margin: 6px 0 8px 0;
+}
+
+.cap-widget--light .cap-milestone-text {
+  font-size: 11px;
+  font-family: var(--font-mono, monospace);
+  color: #059669;
+}
+
+.cap-widget--light .cap-foot-badge {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #0F172A;
+  background-color: #E2E8F0;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.cap-widget--light .cap-foot-meta {
+  font-size: 11px;
+  font-family: var(--font-mono, monospace);
+  color: #64748B;
+}
+
+/* --- DARK THEME (Template 2) --- */
+.cap-widget--dark {
+  background-color: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.03);
+}
+
+.cap-widget--dark .cap-widget-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94A3B8;
+}
+
+.cap-widget--dark .cap-code-block {
+  background-color: #090D16;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 12px 14px;
+  overflow-x: auto;
+}
+
+.cap-widget--dark .cap-pre code {
+  color: #CBD5E1;
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+  font-size: 11.5px;
+  line-height: 1.55;
+}
+
+.cap-widget--dark .cap-tab-btn {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #94A3B8;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cap-widget--dark .cap-tab-btn:hover {
+  color: #F8FAFC;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.cap-widget--dark .cap-tab-btn.active {
+  color: #F8FAFC;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.cap-widget--dark .cap-run-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #F8FAFC;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cap-widget--dark .cap-run-btn:hover {
+  background-color: rgba(21, 188, 223, 0.15);
+  border-color: #15BCDF;
+  color: #15BCDF;
+}
+
+.cap-widget--dark .cap-seg-btn {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94A3B8;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 3px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cap-widget--dark .cap-seg-btn:hover {
+  color: #F8FAFC;
+}
+
+.cap-widget--dark .cap-seg-btn.active {
+  color: #15BCDF;
+  background-color: rgba(21, 188, 223, 0.12);
+  border-color: rgba(21, 188, 223, 0.3);
+}
+
+.cap-widget--dark .cap-gauge-track {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 8px 0 10px 0;
+}
+
+.cap-widget--dark .cap-gauge-fill {
+  height: 100%;
+  background: #10B981;
+  border-radius: 999px;
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cap-widget--dark .cap-doc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10.5px;
+  font-family: var(--font-mono, monospace);
+  color: #94A3B8;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.cap-widget--dark .cap-sprint-phase {
+  font-size: 13px;
+  font-weight: 700;
+  color: #F8FAFC;
+}
+
+.cap-widget--dark .cap-sprint-badge {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #15BCDF;
+  background-color: rgba(21, 188, 223, 0.12);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.cap-widget--dark .cap-sprint-detail {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #94A3B8;
+  margin: 6px 0 8px 0;
+}
+
+.cap-widget--dark .cap-milestone-text {
+  font-size: 11px;
+  font-family: var(--font-mono, monospace);
+  color: #34D399;
+}
+
+.cap-widget--dark .cap-foot-badge {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #CBD5E1;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.cap-widget--dark .cap-foot-meta {
+  font-size: 11px;
+  font-family: var(--font-mono, monospace);
+  color: #64748B;
+}
+
+/* --- COMMON SHARED COMPONENTS --- */
+.cap-widget-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cap-widget-tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 2px;
+  border-radius: 7px;
+}
+
+.cap-widget--dark .cap-widget-tabs {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.cap-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #10B981;
+}
+
+.cap-status-dot.pulsing {
+  background-color: #0EA5E9;
+  animation: capPulse 0.8s infinite ease-in-out;
+}
+
+@keyframes capPulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.cap-pre {
+  margin: 0;
+  padding: 0;
+}
+
+.cap-segmented {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 2px;
+  border-radius: 6px;
+}
+
+.cap-widget--dark .cap-segmented {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.cap-gauge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cap-widget--light .cap-gauge-title {
+  color: #0F172A;
+}
+
+.cap-widget--dark .cap-gauge-title {
+  color: #F8FAFC;
+}
+
+.cap-widget--light .cap-gauge-value {
+  font-family: var(--font-mono, monospace);
+  color: #0284C7;
+}
+
+.cap-widget--dark .cap-gauge-value {
+  font-family: var(--font-mono, monospace);
+  color: #15BCDF;
+}
+
+.cap-doc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cap-chip-icon {
+  width: 12px;
+  height: 12px;
+  opacity: 0.7;
+}
+
+.cap-sprint-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.cap-sprint-milestone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.cap-milestone-icon {
+  font-weight: bold;
+}
+
+/* Guardrail Toggle */
+.cap-toggle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cap-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.cap-widget--light .cap-toggle-btn {
+  background-color: #F1F5F9;
+  color: #64748B;
+  border-color: #E2E8F0;
+}
+
+.cap-widget--light .cap-toggle-btn.active {
+  background-color: #ECFDF5;
+  color: #059669;
+  border-color: #A7F3D0;
+}
+
+.cap-widget--dark .cap-toggle-btn {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #FCA5A5;
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.cap-widget--dark .cap-toggle-btn.active {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #34D399;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.cap-toggle-thumb {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.cap-widget-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: 6px;
+}
+
+.cap-foot-badge--success {
+  color: #059669 !important;
+  background-color: #ECFDF5 !important;
+}
+
+.cap-widget--dark .cap-foot-badge--success {
+  color: #34D399 !important;
+  background-color: rgba(16, 185, 129, 0.15) !important;
+}
+
+.cap-foot-badge--danger {
+  color: #DC2626 !important;
+  background-color: #FEF2F2 !important;
+}
+
+.cap-widget--dark .cap-foot-badge--danger {
+  color: #F87171 !important;
+  background-color: rgba(239, 68, 68, 0.15) !important;
+}

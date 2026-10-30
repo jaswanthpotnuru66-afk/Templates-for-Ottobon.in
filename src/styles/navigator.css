@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Template Navigator — Review Toolbar
+   ========================================================================== */
+
+.tpl-nav-root {
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+.tpl-nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(13, 16, 20, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 6px 10px 6px 14px;
+  border-radius: 100px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.tpl-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tpl-nav-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #15BCDF;
+  box-shadow: 0 0 10px #15BCDF;
+}
+
+.tpl-nav-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+
+.tpl-nav-switch {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3px;
+  border-radius: 100px;
+}
+
+.tpl-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border-radius: 100px;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tpl-nav-pill-num {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9.5px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.tpl-nav-btn:hover {
+  color: #FFFFFF;
+}
+
+.tpl-nav-btn.active {
+  background: #FFFFFF;
+  color: #080A0E;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tpl-nav-btn.active .tpl-nav-pill-num {
+  color: #475569;
+}
+
+@media (max-width: 768px) {
+  .tpl-nav-root {
+    top: 8px;
+    width: calc(100% - 24px);
+  }
+
+  .tpl-nav-bar {
+    width: 100%;
+    justify-content: space-between;
+    padding: 6px 8px;
+  }
+
+  .tpl-nav-label {
+    display: none;
+  }
+
+  .tpl-nav-btn {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}
